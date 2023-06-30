@@ -239,3 +239,4 @@ a { transition: all 0.3s ease; }
 .redtable {
   background-color: red;
 }
+.mySlides {display:none;}
