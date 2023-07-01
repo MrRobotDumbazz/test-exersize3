@@ -223,6 +223,9 @@ a { transition: all 0.3s ease; }
     margin-bottom: 0;
     line-height: 1;
   }
+  .hidden-mobile {
+    display: none;
+  }
 }
 .card_img {
   width: 120px;
@@ -239,4 +242,58 @@ a { transition: all 0.3s ease; }
 .redtable {
   background-color: red;
 }
-.mySlides {display:none;}
+
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+.image-container {
+  width: 600px;
+  background-color: pink;
+  height: 200px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -200px;
+}
+#slide-3:target ~ .image-container {
+  left: -400px;
+}
+.slider {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
